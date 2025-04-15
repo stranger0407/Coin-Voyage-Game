@@ -8,8 +8,10 @@
 
 ## 📸 Preview
 
-![Game Screenshot 1](./screenshots/screenshot1.png)  
-![Game Screenshot 2](./screenshots/screenshot2.png)
+![brave_screenshot_coin-voyage-game-git-dev-rajas-projects-047bd344 vercel app (1)](https://github.com/user-attachments/assets/75b2e6b9-02dd-4212-a3ca-8a33b9ce4dd9)
+
+![brave_screenshot_coin-voyage-game-git-dev-rajas-projects-047bd344 vercel app](https://github.com/user-attachments/assets/5ed41d5e-5f46-46dc-9a51-85acad26baa5)
+
 
 > *(Replace the image paths above with actual screenshot files if available in your repo)*
 
