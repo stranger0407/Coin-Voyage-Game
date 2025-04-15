@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+:root {
+  --primary-black: black;
+  --logo-fonts: 26px;
+  --gap: 10px;
+  --primary-width: 600px;
+  --lg-border-radius: 16px;
+  --sm-border-radius: 8px;
+  --primary-margin: 20px auto;
+  --primary-green: rgb(28, 126, 4);
+  --large-gap: 20px;
+  --body-bg-color: #0d1117;
+  --primary-white: white;
+  --min-width-content: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--primary-white);
+}
+
+nav {
+  background-color: var(--primary-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--large-gap);
+  gap: var(--gap);
+}
+
+a {
+  font-family: 'Honk', system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 42px;
+  font-style: normal;
+  font-variation-settings:
+    'MORF' 15,
+    'SHLN' 50;
+  text-decoration: none;
+  color: var(--primary-white);
+  /* font-size: var(--logo-fonts); */
+}
+
+button {
+  padding: 5px 10px;
+}
+
+main {
+  max-width: var(--primary-width);
+  width: 100%;
+  margin: var(--primary-margin);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.scores,
+.turn {
+  margin-left: var(--gap);
+  margin-right: var(--gap);
+}
+
+#game-board {
+  display: grid;
+  max-width: 800px;
+  mix-blend-mode: difference;
+  width: 100%;
+  margin: var(--primary-margin);
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#controller {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#controller img {
+  width: var(--min-width-content);
+}
+
+@media only screen and (min-width: 600px) {
+  .grid-item {
+    width: var(--min-width-content);
+    height: var(--min-width-content);
+  }
+}
+
+.start-game-requirements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: var(--primary-margin);
+  width: 100%;
+  max-width: 650px;
+  gap: var(--large-gap);
+  border: 1px solid var(--primary-white);
+  padding: var(--gap);
+  border-radius: var(--lg-border-radius);
+}
+
+#start {
+  background-color: var(--primary-green);
+  width: 80px;
+  color: var(--primary-white);
+  border-radius: var(--sm-border-radius);
+  padding: var(--gap);
+}
+
+#controller {
+  display: none;
+}
+
+select {
+  border-radius: 4px;
+  padding: 5px 20px;
+}
+
+.popup {
+  border: 1px solid var(--primary-white);
+  padding: 10px 20px;
+  display: none;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #010409;
+  color: var(--primary-white);
+  border-radius: var(--lg-border-radius);
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  font-size: var(--large-gap);
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  gap: var(--large-gap);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.show-popup {
+  display: flex;
+}
+
+.game-over {
+  text-align: center;
+}
+
+.game-over p {
+  margin-bottom: var(--gap);
+  font-weight: bold;
+  color: #4493f8;
+}
+
+.game-over button {
+  background-color: #47c55c;
+  border-radius: var(--sm-border-radius);
+}
+
+.winner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
+}
+
+.winner::before,
+.winner::after {
+  content: '🎉';
+}
+.winner svg {
+  width: 30px;
+
+  height: 30px;
+}
+
+@media only screen and (max-width: 450px) {
+  .popup {
+    max-width: 400px;
+    height: 500px;
+
+    width: 100%;
+  }
+  a {
+    font-size: var(--logo-fonts);
+  }
+}
+@media only screen and (max-width: 416px) {
+  .popup {
+    max-width: 360px;
+    height: 500px;
+
+    width: 100%;
+  }
+  label {
+    font-size: 14px;
+  }
+}
+
+button {
+  cursor: pointer;
+  color: var(--primary-white);
+}
+
+.main-restart {
+  background-color: var(--primary-green);
+  border-radius: var(--sm-border-radius);
+  padding: var(--gap);
+}
+
+.player-info {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  gap: var(--large-gap);
+}
+
+.start-game-wrapper {
+  padding: 10px;
+}
+
+.instruction {
+  font-weight: bold;
+}
+
+.how-to-play {
+  padding: var(--large-gap);
+}
+
+.how-to-play ul {
+  margin-left: var(--large-gap);
+}
+
+h2 {
+  margin-top: var(--large-gap);
+  margin-bottom: var(--gap);
+}
+#magnet {
+  height: 15px;
+  width: 15px;
+  background: url('../assets/magnet-svgrepo-com.svg');
+  background-size: contain;
+}
+
+.player-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-icon img {
+  height: 15px;
+  width: 15px;
+}
+
+.selection-for-user {
+  margin-left: var(--large-gap);
+  display: flex;
+  gap: var(--gap);
+  flex-direction: column;
+}
+
+.up-arrow button,
+.below-controller button {
+  border-radius: var(--sm-border-radius);
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.turn {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.allScores {
+  list-style: none;
+  display: flex;
+  gap: var(--gap);
+}
+
+.scores,
+.turn {
+  font-size: var(--large-gap);
+}
