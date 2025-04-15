@@ -41,3 +41,38 @@
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/coin-voyage-game.git
+
+Navigate to the project directory:
+
+bash
+Copy
+Edit
+cd coin-voyage-game
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Start the development server:
+
+bash
+Copy
+Edit
+npm start
+Visit http://localhost:3000 in your browser to play locally.
+
+🤝 Contributing
+Got an idea to improve the game? Found a bug?
+Feel free to open an issue or submit a pull request. Contributions are always welcome!
+
+📄 License
+This project is licensed under the MIT License.
+See LICENSE for more details.
+
+👨‍🎓 Author
+Developed with ❤️ by Raja Jha
+Final-year student at LD College of Engineering
+Intern at Simform
+
+
