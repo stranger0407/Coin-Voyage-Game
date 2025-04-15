@@ -30,8 +30,7 @@
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML, CSS, JavaScript (React.js)
-- **Game Logic**: React hooks and state management
+- **Frontend**: HTML, CSS, Typescript
 - **Deployment**: [Vercel](https://vercel.com)
 
 ---
